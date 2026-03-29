@@ -3,21 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akanksha N | Full Stack Developer</title>
+    <title>Akanksha N | Backend & Full Stack Developer</title>
+    <!-- Fonts: Syne and DM Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="bg-orbs">
-        <div class="orb orb-1"></div>
-        <div class="orb orb-2"></div>
-        <div class="orb orb-3"></div>
-    </div>
-
     <nav id="navbar">
         <div class="nav-container">
             <a href="#" class="logo">Akanksha.</a>
@@ -28,7 +23,7 @@
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#certifications" class="nav-link">Certs</a></li>
                 <li><a href="#timeline" class="nav-link">Timeline</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
@@ -37,13 +32,30 @@
 
     <main>
         <section id="hero" class="fade-section">
-            <div class="container hero-content">
-                <h1>Akanksha N</h1>
-                <h2 class="typewriter-container"><span id="typewriter"></span><span class="cursor">|</span></h2>
-                <p class="tagline">I build systems that are clean, fast, and actually work.</p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View Projects</a>
-                    <a href="Resume.pdf" download class="btn btn-outline">Download Resume &rarr;</a>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <h1>Akanksha N</h1>
+                    <h2 class="typewriter-container"><span id="typewriter"></span><span class="cursor">|</span></h2>
+                    <p class="hero-desc">Backend & full-stack development. Currently focused on DSA and MERN stack preparation.</p>
+                    
+                    <div class="hero-stats stat-chips">
+                        <span class="chip"><i class="fas fa-graduation-cap"></i> Diploma 9.8</span>
+                        <span class="chip"><i class="fas fa-trophy"></i> DCET Rank 25</span>
+                        <span class="chip"><i class="fas fa-scroll"></i> 2× NPTEL Elite</span>
+                    </div>
+
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="Resume.pdf" download class="btn btn-outline">Download Resume &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Floating Tech Stack Cards -->
+                <div class="hero-floating">
+                    <div class="float-card float-1"><i class="fab fa-node-js"></i> Node.js</div>
+                    <div class="float-card float-2"><i class="fas fa-database"></i> MySQL</div>
+                    <div class="float-card float-3"><i class="fas fa-server"></i> Express.js</div>
+                    <div class="float-card float-4"><i class="fas fa-network-wired"></i> REST API</div>
                 </div>
             </div>
         </section>
@@ -51,19 +63,16 @@
         <section id="about" class="fade-section">
             <div class="container">
                 <h2 class="section-title">ABOUT ME</h2>
-                <div class="about-grid glass-card">
+                <div class="about-grid">
                     <div class="about-image">
-                        <img src="profile.jpeg" alt="Akanksha N">
+                        <div class="photo-frame">
+                            <img src="profile.jpeg" alt="Akanksha N">
+                        </div>
                     </div>
                     <div class="about-text">
                         <p>I'm a 6th-semester ISE student at RVCE Bengaluru, who joined through lateral entry after securing DCET Rank 25 and a 9.8 CGPA in Diploma CS.</p>
                         <p>I build full-stack systems, care deeply about clean architecture, and have earned Elite certifications in Graph Algorithms from IISc and Data Science from IIT Madras.</p>
                         <p>Currently focused on DSA and MERN stack for placements.</p>
-                        <div class="stat-chips">
-                            <span class="chip"><i class="fas fa-graduation-cap"></i> 9.8 Diploma CGPA</span>
-                            <span class="chip"><i class="fas fa-trophy"></i> DCET Rank 25</span>
-                            <span class="chip"><i class="fas fa-scroll"></i> 2 NPTEL Elite</span>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -79,7 +88,6 @@
                             <span class="pill">HTML</span>
                             <span class="pill">CSS</span>
                             <span class="pill">JavaScript</span>
-                            <span class="pill">React (Learning)</span>
                         </div>
                     </div>
                     <div class="skill-group glass-card">
@@ -98,7 +106,7 @@
                     <div class="skill-group glass-card">
                         <h3>Languages</h3>
                         <div class="pill-container">
-                            <span class="pill">C++</span>
+                            <span class="pill">Java</span>
                             <span class="pill">Python</span>
                         </div>
                     </div>
@@ -129,7 +137,7 @@
                 <h2 class="section-title">PROJECTS</h2>
                 <div class="project-grid">
                     <article class="project-card glass-card">
-                        <div class="project-image" style="background: linear-gradient(135deg, #00d4ff22, #7c3aed22);"></div>
+                        <div class="project-image" style="background: linear-gradient(135deg, #0052FF22, #00d4ff22);"></div>
                         <div class="project-content">
                             <h3>Student Club Management System</h3>
                             <p>Full-stack platform with interest-based club recommendation engine, normalized relational DB, keyword-based chatbot, and live Vercel deployment.</p>
@@ -148,7 +156,7 @@
                     </article>
 
                     <article class="project-card glass-card">
-                        <div class="project-image" style="background: linear-gradient(135deg, #7c3aed22, #00d4ff22);"></div>
+                        <div class="project-image" style="background: linear-gradient(135deg, #f3f4f6, #e5e7eb);"></div>
                         <div class="project-content">
                             <h3>BreatheEasy+</h3>
                             <p>Personalized air pollution health advisor that calculates exposure load and risk scores using real-time AQI data — recommending safe travel windows for any Indian city. (IDP Project @ RVCE)</p>
@@ -174,20 +182,26 @@
             <div class="container">
                 <h2 class="section-title">CERTIFICATIONS</h2>
                 <div class="cert-grid">
-                    <div class="cert-card glass-card">
+                    <div class="cert-card gold-card">
                         <div class="cert-icon"><i class="fas fa-award"></i></div>
                         <div class="cert-details">
                             <h3>Graph Algorithms for Data Science</h3>
                             <p class="issuer">IISc Bangalore via NPTEL</p>
-                            <div class="cert-score">84% | Elite Grade</div>
+                            <div class="cert-meta">
+                                <span class="cert-score">84% | Elite Grade</span>
+                                <span class="cert-id" style="display:none;"></span>
+                            </div>
                         </div>
                     </div>
-                    <div class="cert-card glass-card">
+                    <div class="cert-card gold-card">
                         <div class="cert-icon"><i class="fas fa-certificate"></i></div>
                         <div class="cert-details">
                             <h3>Data Science for Engineers</h3>
                             <p class="issuer">IIT Madras via NPTEL</p>
-                            <div class="cert-score">75% | Elite Grade</div>
+                            <div class="cert-meta">
+                                <span class="cert-score">75% | Elite Grade</span>
+                                <span class="cert-id" style="display:none;"></span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -200,7 +214,7 @@
                 <div class="timeline-container glass-card">
                     
                     <div class="timeline-item">
-                        <div class="timeline-dot"></div>
+                        <div class="timeline-dot active-dot"></div>
                         <div class="timeline-date">2024–Now</div>
                         <div class="timeline-content">
                             <h3>NPTEL Certifications</h3>
